@@ -44,3 +44,22 @@ for (var i = 0; i < studenti.length; i++){
     console.log("Nome: " + studenti[i].nome);
     console.log("Cognome: " + studenti[i].cognome);
 }
+
+var nome = prompt("Inserisci il tuo nome");
+var cognome = prompt("Inserisci il tuo cognome");
+var eta = prompt("Inserisci la tua età");
+
+var obj = {
+    'nome': nome,
+    'cognome': cognome,
+    'eta': eta
+};
+
+studenti.push(obj);
+
+for (var i = 0; i < studenti.length; i++){
+    console.log("");
+    console.log("Nome: " + studenti[i].nome);
+    console.log("Cognome: " + studenti[i].cognome)
+    console.log("Eta: " + studenti[i].eta);
+}
